@@ -1,0 +1,99 @@
+-- What, why, where and How to use MVC
+-- Good hold on MVC
+-- Communication between M V and C
+-- Entity Framework with SQL Server for CRUD 
+-- DI 
+-- Security - Identity Framework - oAuth
+-- Makeing an API Call
+----------------------------------------
+Pre-requisite
+	a. OOPS fundamentals
+	b. HTML, CSS and JS
+Software
+	Visual Studio 2019 or 2022 with .net core
+	SQL Server with SSMS
+----- you can make use of Cloud lab
+
+-------------------------------------------
+a. Be a part of new project on ASP.net MVC
+b. Take up an existing project on same for maintainance
+
+----------------------------------------
+Expecations:
+	be on time, complete the taks, assignments
+	Be interactive
+--------
+Break time
+	last 20 mins will be for QnA
+
+
+
+
+
+
+
+
+
+
+
+
+			M (.cs file) - Model - Data part
+				CRUD, sort, filter, calculate, valdate, format, WebAPi calls
+				
+					--Collection
+					--POCO Classes (Plain C# Objects) - mapping to tables in database 
+					--DBContecxt class (Linq and CRUD Operation)
+		
+			V (.cshtml) - Razor syntax - short hand html,css and JS
+				HTML, CSS, JS, bootstrap, JQuery, React, images, videos etc....
+
+				--layout view
+				--actionview
+				--partialview
+				
+			C (.cs file) - do a cordination between model and view 
+				collect data from Model pass it to view
+				collection data from view and pass it to Model
+
+				Authentication, Authorization, identity fraeowkr, Caching, session management etc.....
+				
+					--MVC Controller : Controller
+					--API Controller : ControllerBase
+				Plain controller
+				With EF Core
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+				Model ---> Controller --- > View
+				View ----> Controller ----> Model
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	

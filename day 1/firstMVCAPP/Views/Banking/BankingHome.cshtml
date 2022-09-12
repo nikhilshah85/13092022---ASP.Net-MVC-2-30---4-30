@@ -1,0 +1,53 @@
+﻿
+
+
+<h1 style="text-align:center"> Welcome to Bank </h1>
+
+@*<h3> Some more details coming soon, please keep watcing this space </h3>*@
+
+<h4> Developer : @ViewBag.developer </h4>
+<h4> Team Strength : @ViewBag.teamSize</h4>
+<h4> Technology List : </h4>
+
+<h4> Project Status : </h4>
+@if (ViewBag.isProjectLive)
+{
+    <h1> Live</h1>
+}
+else
+{
+    <h1> Not live, soon to be live </h1>
+}
+
+@*<ul>
+    @foreach (var item in ViewBag.techList)
+    {
+        <li> @item </li>
+    }
+</ul>*@
+
+@*<select>
+    @foreach (var item in ViewBag.techList)
+    {
+        <option>@item</option>
+    }
+</select>*@
+
+@foreach (var item in ViewBag.techList)
+{
+    <span> 
+       @item <input type="checkbox"/>
+    </span>
+}
+
+
+
+
+
+
+
+
+
+
+
+
