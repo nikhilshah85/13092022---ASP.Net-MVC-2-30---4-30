@@ -1,0 +1,24 @@
+﻿
+
+
+<h1> Products Home Page </h1>
+
+<p> Developer :  @ViewBag.developer</p>
+<p> APP Name : @ViewBag.appName</p>
+
+
+<hr/>
+
+<table class="table">
+    @foreach (var item in ViewBag.products)
+    {
+        <tr>
+            <td> @item.pId </td>
+            <td> @item.pName </td>
+            <td> @item.pPrice </td>
+            <td> @item.pCategory </td>
+            <td> @item.pIsInStock </td>
+            <td class="btn btn-primary">Add To Cart </td>
+        </tr>
+    }
+</table>

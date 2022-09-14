@@ -67,6 +67,12 @@ Break time
 
 				Model ---> Controller --- > View
 				View ----> Controller ----> Model
+
+-------------------------------------------------------------------------------------------
+
+			Controller to View
+			View to controller
+		
 			
 
 
