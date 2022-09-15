@@ -1,0 +1,19 @@
+﻿@model IEnumerable<EF2.Models.EF.Product>
+
+
+    <h1> List of Products From database </h1>
+    <table class="table table-bordered">
+        @foreach (var item in Model)
+        {
+            <tr> 
+                <td> @item.PId </td>
+                <td> @item.PName </td>
+                <td> @item.PCategory </td>
+                <td> @item.PPrice </td>
+                <td> @item.PIsInStock </td>
+
+            </tr>
+        }
+    </table>
+
+

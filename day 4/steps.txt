@@ -1,0 +1,114 @@
+MVC
+
+Communication between Model View Controller
+
+MVC APP with SQL Server database - Entity Framework 
+
+
+	step 1 : create a new database on server and create table with sample data
+		Note: every tables you want to use for app should have a primary key
+	
+		create database MVC_EF
+		use MVC_EF
+		
+		create table Products
+		(
+			pId int primary key,
+			pName varchar(20),
+			pCategory varchar(20),
+			pPrice int,
+			pIsInStock bit
+		)
+		insert into Products values(101,'Pepsi','Cold-Drink',50, 1)
+		insert into Products values(102,'Pepsi','Cold-Drink',50, 1)		
+		insert into Products values(103,'Pepsi','Cold-Drink',50, 1)
+		insert into Products values(104,'Pepsi','Cold-Drink',50, 1)
+		insert into Products values(105,'Pepsi','Cold-Drink',50, 1)
+		insert into Products values(106,'Pepsi','Cold-Drink',50, 1)		
+		insert into Products values(107,'Pepsi','Cold-Drink',50, 1)
+
+	step 2: create a new MVC web APP
+
+	
+	step 3: Install 4 Nuget packages to work with EF Core and SQl Server
+		solution explorer -> right click project name -> Manage Nuget Packages
+
+			Microsoft.EntityFrameworkCore.Design
+			Microsoft.EntityFrameworkCore.Tools
+			Microsoft.EntityFrameworkCore
+			Microsoft.EntityFrameworkCore.SqlServer
+
+	step 4 : create Model Classes using EF Console Manager with the help of below command
+		(EF is based on ORM design pattern) - Object Relational Mapping
+			Model class will map to your table in database
+			Properties in class will be mapped to columns in database
+
+			DBContext class - which is like a database in ur application
+				it knows all the tables, columns, constrains, connection string etc....
+				it performs the CRUD Operations
+
+	step 5 : Tools -> Nuget Package Manager -> Nuget package Manger Console
+		Scaffold-DbContext "server=WIN8\NIKHILINSTANCE;database=MVC_EF;integrated security=true" -OutputDir Models\EF -		Provider Microsoft.EntityFrameworkCore.SqlServer
+
+		change the server name above and database name if it is different, above connection string is using windows Auth
+		
+		below is the command for sql server auth
+		Scaffold-DbContext "server=WIN8\NIKHILINSTANCE;database=MVC_EF;user id=sa; password=yourpwd" -OutputDir Model\EF -				Provider Microsoft.EntityFrameworkCore.SqlServer
+
+	step 6 : create a new controller -> MVC Controlelle with EF and Views 
+		select Model class as table name
+		select dbcontext as context class
+		keep all the options selected, read them for future reference
+
+		build the app, run the app
+		test the app, it will create the pages for crud operations
+
+		localhost:56565/products
+
+
+
+		
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+				
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
