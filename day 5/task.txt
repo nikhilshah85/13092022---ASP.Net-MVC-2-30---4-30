@@ -1,0 +1,18 @@
+Lab 1: Display the below data from 
+	given api url : https://jsonplaceholder.typicode.com/photos
+
+	albumID
+	ID
+	title
+	thumbnailurl (display the image) - img tag
+
+
+Lab 2: Display users from below URL
+	https://jsonplaceholder.typicode.com/users
+
+	name
+	username
+	email
+	address.city
+	company.name
+	company.catchphase

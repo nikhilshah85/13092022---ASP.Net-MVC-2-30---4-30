@@ -12,7 +12,11 @@ namespace EF2.Controllers
         {
             _logger = logger;
         }
-
+        
+        public IActionResult StorageAPIUse()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();

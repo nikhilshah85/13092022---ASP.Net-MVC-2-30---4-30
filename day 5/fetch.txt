@@ -1,0 +1,9 @@
+
+
+
+
+
+			fetch(' url', {data} ).then( convert the response to json)
+					      .then(result => { code to display the result })
+					       .catch(err => { code to display the error })
+					    .finally( { .... });
