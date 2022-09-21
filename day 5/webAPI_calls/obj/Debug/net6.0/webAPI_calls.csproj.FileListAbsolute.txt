@@ -24,3 +24,7 @@ C:\Users\hp\Desktop\13092022---ASP.Net-MVC-2-30---4-30\day 5\webAPI_calls\obj\De
 C:\Users\hp\Desktop\13092022---ASP.Net-MVC-2-30---4-30\day 5\webAPI_calls\obj\Debug\net6.0\webAPI_calls.pdb
 C:\Users\hp\Desktop\13092022---ASP.Net-MVC-2-30---4-30\day 5\webAPI_calls\obj\Debug\net6.0\webAPI_calls.genruntimeconfig.cache
 C:\Users\hp\Desktop\13092022---ASP.Net-MVC-2-30---4-30\day 5\webAPI_calls\obj\Debug\net6.0\ref\webAPI_calls.dll
+C:\Users\hp\Desktop\13092022---ASP.Net-MVC-2-30---4-30\day 5\webAPI_calls\bin\Debug\net6.0\System.Net.Http.Formatting.dll
+C:\Users\hp\Desktop\13092022---ASP.Net-MVC-2-30---4-30\day 5\webAPI_calls\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\hp\Desktop\13092022---ASP.Net-MVC-2-30---4-30\day 5\webAPI_calls\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
+C:\Users\hp\Desktop\13092022---ASP.Net-MVC-2-30---4-30\day 5\webAPI_calls\obj\Debug\net6.0\webAPI_calls.csproj.CopyComplete

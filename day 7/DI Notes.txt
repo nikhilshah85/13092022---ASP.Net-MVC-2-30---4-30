@@ -1,0 +1,77 @@
+MVC
+EF Core for SQL Server and CRUD Operations
+API calling
+Dependency Injection
+	Objects and memory -> Performance of an application
+		We create / instanciate a lot of objects in an application 
+
+		but we never write any code to destroy / release the objects
+
+		This is a web, request keeps on increasing, and thus increasing the objects on server
+
+		this is affecting the application performance
+
+	-------------thus now on framework will take the responsibility to create the object for you and destroy it 
+			as per your configuration
+
+		Framework will create the object and destroy the object, keep application server light weight
+
+	This is achived in 2 parts
+		1 use a construstor for dependency on another object
+		2. Configure Middleware
+			Middle ware will ask runtime to create the object and also instruct
+			to manage lifecycle of the object
+
+			object can be created and destroyed on below configuration
+			1. perCall object - new object created for every call and destroyed after the call
+			Addtranscient()
+		2. perSession object - new Object for new user, session is cread and destroyed when user logs out or times out
+			AddScoped()
+		3. Global / shared object - object gets created when server starts and same obj is used by all the users
+				object gets destroyed when server stops / restart
+			AddSingleTon()						
+
+
+
+		AddTranscient - use it when data is very dynamic - eg currency exchange rate, stock market etc....
+		AddScoped - for individual / users personal data - bank account
+		AddSingleTon - for static data - data does not change much - railway schedule
+
+
+
+
+
+	Next demo is DI with EF and dataase
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
